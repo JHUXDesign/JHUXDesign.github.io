@@ -14,14 +14,51 @@ html {
     --text-color: #000000;
 }
 
+.dark-mode {
+    --bg-color: #000000;
+    --text-color: #f6f5f0;
+}
+
 body {
     background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 main {
     display: flex;
     flex-direction: row;
 }
+
+/* Dark Mode Buttons */
+
+.theme-btn {
+    bottom: 8%;
+    left: 5%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.1s ease-in-out;
+}
+
+.theme-btn:active {
+    transform: translateY(-3px);
+}
+
+.theme-btn i {
+    font-size: 2rem;
+    color: var(--bg-color);
+    pointer-events: none;
+}
+
+/* Left Column Items */
 
 .left-column {
     display: flex;
@@ -54,7 +91,7 @@ main {
     margin: 1rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 1.5rem;
     width: auto;
     justify-content: center;
     align-items: center;
