@@ -153,3 +153,26 @@ main {
     font-weight: bold;
     box-shadow: 10px 5px 5px var(--shadow-color);
 }
+
+
+
+/* Responsive Section */
+
+@media only screen and (max-width: 768px) {
+    .left-column {
+        width: 30%;
+    }
+
+    .left-column .nav-links {
+        position: sticky;
+        top: 0px;
+    }
+
+    .port-container {
+        grid-template-columns: 1fr;
+    }
+
+    .port-container img {
+        width: 17rem;
+    }
+}
