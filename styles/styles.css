@@ -31,6 +31,10 @@ main {
     flex-direction: row;
 }
 
+header {
+    display: none;
+}
+
 /* Dark Mode Buttons */
 
 .theme-btn {
@@ -159,8 +163,41 @@ main {
 /* Responsive Section */
 
 @media only screen and (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    /*header {
+        position: sticky;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem 1rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-banner {
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 0.1rem;
+    }
+
+    .header-nav {
+        
+    }
+
+    .header-nav nav {
+        padding: 1rem 1rem 0 1rem;
+    }*/
+
     .left-column {
-        width: 30%;
+        width: 45%;
+        padding: 0.1rem;
+        margin: 0;
     }
 
     .left-column .nav-links {
@@ -168,12 +205,20 @@ main {
         top: 0px;
     }
 
+    .right-column {
+        align-items: center;
+        text-align: center;
+    }
+
     .port-container {
         grid-template-columns: 1fr;
     }
 
-    .port-container img {
-        width: 10rem;
-        height: 10rem;
+    img {
+        max-width: 50vw;
     }
+
+    /*.port-container img {
+        width: 17rem;
+    }*/
 }
