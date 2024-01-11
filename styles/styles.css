@@ -195,7 +195,7 @@ header {
     }*/
 
     .left-column {
-        width: 45%;
+        max-width: 45vw;
         padding: 0.1rem;
         margin: 0;
     }
