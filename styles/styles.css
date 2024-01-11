@@ -206,6 +206,7 @@ header {
     }
 
     .right-column {
+        max-width: 45vw;
         align-items: center;
         text-align: center;
     }
