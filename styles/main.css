@@ -1,0 +1,108 @@
+/* Global */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* html */
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+/* Body */
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+main {
+    background-image: linear-gradient(to bottom right, black, white);
+}
+
+/* Reusable Components */
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+    font-weight: 700;
+}
+
+.container {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    row-gap: 9.6rem;
+    column-gap: 6.4rem;
+}
+
+.grid:last-child {
+    margin-bottom: 0;
+}
+
+.grid:not(:last-child) {
+    margin-bottom: 9.6rem;
+}
+
+.grid-2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* .about .about-shape-1 {
+    height: 50%;
+    width: 50%;
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    clip-path: circle(50% at 50% 50%);
+} */
+
+/* Header */
+
+header {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem 0 5rem;
+}
+
+.logo-1 {
+    height: 20rem;
+}
+
+.logo-text {
+    height: 20rem;
+}
+
+.main-nav {
+    color: white;
+    font-size: 2rem;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+/* Main Content */
+
+/* Footer */

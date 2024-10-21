@@ -198,6 +198,7 @@ header {
         max-width: 45vw;
         padding: 0.1rem;
         margin: 0;
+        text-align: center;
     }
 
     .left-column .nav-links {
@@ -206,7 +207,6 @@ header {
     }
 
     .right-column {
-        max-width: 45vw;
         align-items: center;
         text-align: center;
     }
