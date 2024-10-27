@@ -13,9 +13,17 @@
         <link rel="stylesheet" href="./styles/main.css" />
     </head>
     <body>
+        <div class="loader" id="loader">
+            <img
+                src="./assets/Hummingbird1.png"
+                class="loading-logo"
+                alt="Company Logo shows a brightly colored hummingbird with the words Hummingbird Dreams to the right" />
+        </div>
         <header>
-            <img src="./assets/hummingbirdTrans.png" class="logo-1" />
-            <img src="./assets/textLogoTrans2.png" class="logo-text" />
+            <img
+                src="./assets/textLogoTrans2.png"
+                class="logo-text"
+                alt="Company logo consisting of a cursive H and a cursive D" />
             <nav class="main-nav">
                 <ul class="nav-list">
                     <li>About</li>
@@ -26,34 +34,48 @@
             </nav>
         </header>
         <main>
-            <h1>Hummingbird Dreams</h1>
+            <!-- ABOUT SECTION -->
             <section class="about">
-                <h3 class="section-heading">About</h3>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi soluta repellendus obcaecati doloremque nobis
-                    debitis earum ex molestias magnam quidem fuga libero aut,
-                    assumenda quae non. Nulla nemo sed modi. Lorem, ipsum dolor
-                    sit amet consectetur adipisicing elit. Odio, omnis labore
-                    dignissimos libero consectetur unde suscipit eos! Modi
-                    quaerat dolore dolores amet quia ipsam veritatis, atque,
-                    porro consequatur obcaecati quis!
-                </p>
+                <div class="container center-text">
+                    <h1 class="main-heading heading-primary">
+                        Hummingbird Dreams
+                    </h1>
+                    <h3 class="heading-secondary">About</h3>
+                    <p class="about-paragraph paragraph">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Excepturi soluta repellendus obcaecati doloremque
+                        nobis debitis earum ex molestias magnam quidem fuga
+                        libero aut, assumenda quae non. Nulla nemo sed modi.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Odio, omnis labore dignissimos libero consectetur
+                        unde suscipit eos! Modi quaerat dolore dolores amet quia
+                        ipsam veritatis, atque, porro consequatur obcaecati
+                        quis!
+                    </p>
+                </div>
                 <!-- <div class="about-shape-1"></div> -->
             </section>
             <section class="creations">
-                <h3 class="section-heading">Creations</h3>
+                <div class="container center-text">
+                    <h3 class="heading-secondary">Creations</h3>
+                </div>
             </section>
             <section class="social-media">
-                <h3 class="section-heading">
-                    Check Out My Work On Social Media
-                </h3>
-                <div class="2x1-grid"></div>
+                <div class="container center-text">
+                    <h3 class="heading-secondary">
+                        Check Out My Work On Social Media
+                    </h3>
+                    <div class="grid-2-cols social-grid"></div>
+                </div>
             </section>
             <section class="contact">
-                <h3 class="section-heading">Reach Out</h3>
+                <div class="container center-text">
+                    <h3 class="heading-secondary">Reach Out</h3>
+                    <div class="grid-2-cols contact-grid"></div>
+                </div>
             </section>
         </main>
         <footer></footer>
+        <script src="loadingScreen.js"></script>
     </body>
 </html>
