@@ -65,17 +65,105 @@
                     <h3 class="heading-secondary">
                         Check Out My Work On Social Media
                     </h3>
-                    <div class="grid-2-cols social-grid"></div>
+                    <div class="grid grid-2-cols social-grid">
+                        <div class="social-media-panel">
+                            <img
+                                src="./assets/Facebook_Logo_(2019).png"
+                                alt="Facebook logo"
+                                class="social-media-logo" />
+                            <h5 class="heading-tertiary">Facebook</h5>
+                            <p class="social-media text paragraph">
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Maiores esse incidunt sequi?
+                                Ipsum, repellendus. Optio quos, atque a pariatur
+                                quas ducimus eveniet magni temporibus incidunt
+                                est accusantium dolores, cupiditate quidem.
+                            </p>
+                        </div>
+                        <div class="social-media-panel">
+                            <img
+                                src="./assets/Instagram_icon.png"
+                                alt="Instagram logo"
+                                class="social-media-logo" />
+                            <h5 class="heading-tertiary">Instagram</h5>
+                            <p class="social-media text paragraph">
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Maiores esse incidunt sequi?
+                                Ipsum, repellendus. Optio quos, atque a pariatur
+                                quas ducimus eveniet magni temporibus incidunt
+                                est accusantium dolores, cupiditate quidem.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="contact">
+                <div class="circle-contact"></div>
                 <div class="container center-text">
                     <h3 class="heading-secondary">Reach Out</h3>
-                    <div class="grid-2-cols contact-grid"></div>
+                    <div class="grid grid-2-cols contact-grid">
+                        <div class="contact-panel phone-email-panel">
+                            <h5 class="heading-tertiary">Call or E-Mail</h5>
+                            <ul class="contact-list">
+                                <li class="contact-list-item">
+                                    <ion-icon
+                                        class="contact-icon"
+                                        name="call"></ion-icon>
+                                    <p class="paragraph">(111)111-1111</p>
+                                </li>
+                                <li class="contact-list-item">
+                                    <ion-icon
+                                        class="contact-icon"
+                                        name="mail"></ion-icon>
+                                    <p class="paragraph">whatever@gmail.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contact-panel-right">
+                            <form action="" method="POST" class="contact-form">
+                                <div class="input-control i-c-2">
+                                    <input
+                                        type="text"
+                                        name="sender-name"
+                                        required
+                                        placeholder="YOUR NAME" />
+                                    <input
+                                        type="email"
+                                        name="sender-email"
+                                        required
+                                        placeholder="YOUR EMAIL" />
+                                </div>
+                                <div class="input-control">
+                                    <input
+                                        type="text"
+                                        name="subject"
+                                        required
+                                        placeholder="ENTER SUBJECT" />
+                                </div>
+                                <div class="input-control">
+                                    <textarea
+                                        name="message"
+                                        id=""
+                                        cols="15"
+                                        rows="8"
+                                        placeholder="Message Here..."></textarea>
+                                </div>
+                                <div class="submit-btn">
+                                    <input class="inp_btn" type="submit" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
         <footer></footer>
         <script src="loadingScreen.js"></script>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
