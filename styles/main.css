@@ -17,8 +17,9 @@ html {
 /* Variables */
 
 :root {
-    /* --color-bg-Tprimary: #dcce99;
-    --color-text-Tprimary: #3a3838; */
+    --color-bg-main: #060606;
+    /* --color-bg-Tprimary: #dcce99; */
+    /* --color-text-Tprimary: #3a3838; */
     --color-bg-header: #060606;
     --color-text-header: #ffffff;
     --color-text-top-section: #f4efef;
@@ -35,8 +36,8 @@ body {
 }
 
 main {
-    /* background-color: var(--color-bg-primary); */
-    background: linear-gradient(to bottom right, #060606, #ffffff);
+    background-color: var(--color-bg-main);
+    /* background: linear-gradient(to bottom right, #060606, #ffffff); */
     color: var(--color-text-top-section);
 }
 
@@ -174,12 +175,39 @@ header {
 /* Creations Section */
 
 .creations {
+    position: relative;
     z-index: 2;
 }
 
-.creations-item img {
+.creations-item {
+    box-shadow: 0 1.2rem 2.4rem rgba(245, 242, 242, 0.612);
+    border-radius: 5px;
     height: 25rem;
     width: 25rem;
+    transition: all 0.4s;
+    z-index: 1;
+}
+
+.creations-item:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 2.4rem 4.8rem rgba(245, 242, 242, 0.652);
+}
+
+.creations-item img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.creations-shape-1 {
+    background: linear-gradient(33deg, #6cacff, #8debff);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    z-index: 1;
 }
 
 /* Social Media Section */
@@ -199,12 +227,20 @@ header {
 
 .social-media-panel {
     padding: 1rem;
-    background-color: #060606;
+    color: var(--color-bg-main);
+    background-color: var(--color-text-top-section);
     /* border: 3px solid var(--color-text-top-section); */
     /* box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075); */
 }
 
 /* Contact Section */
+
+.contact {
+    padding: 2rem;
+    background-color: #f2ecec;
+    z-index: 2;
+    position: relative;
+}
 
 .circle-contact {
     background: linear-gradient(33deg, #6cacff, #8debff);
@@ -212,14 +248,9 @@ header {
     height: 100px;
     border-radius: 50%;
     position: absolute;
-    bottom: -700px;
-    left: 100px;
+    bottom: 10rem;
+    left: 10rem;
     z-index: 1;
-}
-
-.contact {
-    padding: 2rem;
-    background-color: #f2ecec;
 }
 
 .contact-panel {
