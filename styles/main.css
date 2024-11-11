@@ -124,6 +124,7 @@ main {
 /* Header */
 
 header {
+    height: 20vh;
     background-color: var(--color-bg-header);
     display: flex;
     flex-direction: row;
@@ -153,6 +154,61 @@ header {
 /* Main Content */
 /* ************* */
 
+/* Hero Section */
+
+.hero-section {
+    height: 80vh;
+    padding: 5rem;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-heading {
+    font-size: 6.4rem;
+    padding-bottom: 5rem;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-text {
+    font-size: 2.4rem;
+    padding-bottom: 2rem;
+}
+
+.cta-btn,
+.cta-btn:link,
+.cta-btn:visited {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-bg-main);
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.cta-btn a {
+    text-decoration: none;
+}
+
 /* About Section */
 
 .about {
@@ -161,11 +217,6 @@ header {
     gap: 1rem;
     align-items: center;
     justify-content: center;
-}
-
-.main-heading {
-    font-size: 6.4rem;
-    padding-bottom: 5rem;
 }
 
 .about-paragraph {
@@ -237,7 +288,8 @@ header {
 
 .contact {
     padding: 2rem;
-    background-color: #f2ecec;
+    background-color: var(--color-bg-main);
+    color: var(--color-text-top-section);
     z-index: 2;
     position: relative;
 }
@@ -254,8 +306,9 @@ header {
 }
 
 .contact-panel {
-    background-color: #060606;
-    box-shadow: 0 2.4rem 4.8rem green;
+    background-color: var(--color-text-top-section);
+    color: var(--color-bg-main);
+    box-shadow: 0 1.2rem 2.4rem hsla(0, 19%, 95%, 0.504);
     z-index: 2;
 }
 
@@ -291,7 +344,7 @@ header {
 .contact-icon {
     height: 3rem;
     width: 3rem;
-    color: yellow;
+    color: var(--color-bg-main);
 }
 
 .contact .contact-panel-right {
@@ -312,9 +365,9 @@ header {
     padding: 0.8rem 1.1rem;
     outline: none;
     border: none;
-    background-color: red;
+    background-color: var(--color-text-top-section);
     width: 100%;
-    color: white;
+    color: var(--color-bg-main);
     resize: none;
 }
 
@@ -332,7 +385,7 @@ header {
 }
 
 .contact .contact-panel-right .contact-form .submit-btn .inp_btn {
-    background-color: blue;
+    background-color: var(--color-text-top-section);
     color: black;
     font-size: larger;
     width: 100%;
@@ -340,7 +393,7 @@ header {
     border-radius: 30px;
     font-weight: 600;
     position: relative;
-    border: 1px solid yellow;
+    border: 1px solid var(--color-bg-main);
     display: flex;
     align-self: flex-start;
     align-items: center;
@@ -362,7 +415,6 @@ header {
 
     60% {
         transform: scale(0.9);
-        box-shadow: 10px 10px 0 var(--color-secondary);
     }
 
     100% {
@@ -370,3 +422,35 @@ header {
     }
 }
 /* Footer */
+
+/* ************* */
+/* RESPONSIVE SECTION */
+/* ************* */
+
+/* HERO */
+@media (max-width: 34em) {
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        background-image: url(../assets/Hummingbird1cropped.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .creations-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .creations-item {
+        height: 15rem;
+        width: 15rem;
+    }
+}
