@@ -47,6 +47,7 @@ main {
 .heading-secondary,
 .heading-tertiary {
     font-weight: 700;
+    z-index: 2;
 }
 
 .heading-primary {
@@ -133,9 +134,9 @@ header {
     padding: 0 5rem 0 5rem;
 }
 
-.logo-1 {
+/* .logo-1 {
     height: 20rem;
-}
+} */
 
 .logo-text {
     height: 20rem;
@@ -294,14 +295,58 @@ header {
     position: relative;
 }
 
-.circle-contact {
+.circle-contact-1 {
     background: linear-gradient(33deg, #6cacff, #8debff);
-    width: 100px;
-    height: 100px;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
     position: absolute;
     bottom: 10rem;
     left: 10rem;
+    z-index: 1;
+}
+
+.circle-contact-2 {
+    background: linear-gradient(33deg, #ff9b6c, #ffd18d);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 1rem;
+    right: 10rem;
+    z-index: 0;
+}
+
+.circle-contact-3 {
+    background: linear-gradient(33deg, #ff6c6c, #ff8d8d);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 35rem;
+    left: 20rem;
+    z-index: 1;
+}
+
+.circle-contact-4 {
+    background: linear-gradient(33deg, #daff6c, #f9ff8d);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 30rem;
+    right: 45rem;
+    z-index: 1;
+}
+
+.circle-contact-5 {
+    background: linear-gradient(33deg, #ff6ce7, #d806ca);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15rem;
+    right: 70rem;
     z-index: 1;
 }
 
@@ -327,6 +372,11 @@ header {
     gap: 2rem;
 }
 
+.phone-email-text {
+    font-weight: 500;
+    padding: 2rem 2rem 5rem 2rem;
+}
+
 .phone-mail-line {
     display: flex;
     gap: 2rem;
@@ -350,6 +400,7 @@ header {
 .contact .contact-panel-right {
     flex: 3;
     margin-left: 3rem;
+    z-index: 2;
 }
 
 .contact .contact-panel-right .input-control {
@@ -428,18 +479,31 @@ header {
 /* ************* */
 
 /* HERO */
-@media (max-width: 34em) {
+@media (max-width: 32em) {
+    header {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-text {
+        height: 15rem;
+    }
+
     .hero-container {
         display: flex;
         flex-direction: column;
-        height: 80vh;
         background-image: url(../assets/Hummingbird1cropped.png);
         background-repeat: no-repeat;
         background-position: center;
+        background-size: auto;
     }
 
     .hero-img {
         display: none;
+    }
+
+    .about {
+        margin-top: 5rem;
     }
 
     .creations-grid {
@@ -452,5 +516,38 @@ header {
     .creations-item {
         height: 15rem;
         width: 15rem;
+    }
+
+    .social-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* CONTACT */
+    .contact-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact .contact-panel-right {
+        flex: 3;
+        margin-left: 0rem;
+        z-index: 2;
+    }
+
+    .circle-contact-1 {
+        top: 8.5rem;
+        left: 2.5rem;
+    }
+
+    .circle-contact-4 {
+        bottom: 25rem;
+        left: 2.5rem;
+    }
+
+    .circle-contact-5 {
+        bottom: 45rem;
+        left: 7.5rem;
     }
 }
