@@ -118,17 +118,6 @@ main {
     transition: all 0.3s;
 }
 
-/* .about .about-shape-1 {
-    height: 50%;
-    width: 50%;
-    background-color: aqua;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    clip-path: circle(50% at 50% 50%);
-} */
-
 /* Loading Screen */
 
 .loader {
@@ -157,10 +146,6 @@ header a {
     color: var(--color-text-top-section);
     text-decoration: none;
 }
-
-/* .logo-1 {
-    height: 20rem;
-} */
 
 .logo-text {
     height: 20rem;
@@ -879,7 +864,8 @@ header a {
     }
 
     .hero-container {
-        min-height: 80vh;
+        /* min-height: 80vh; */
+        height: 100%;
         display: flex;
         flex-direction: column;
         background-image: url(../assets/Hummingbird1cropped.png);
