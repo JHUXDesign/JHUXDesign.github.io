@@ -1050,4 +1050,8 @@ header a {
     .about {
         margin-top: 15rem;
     }
+
+    .about h3 {
+        display: none;
+    }
 }
