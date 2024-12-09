@@ -850,6 +850,13 @@ header a {
 
 /* PHONES */
 @media (max-width: 32em) {
+    /* Loading screen */
+
+    .loading-logo {
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+
     /* HEADER */
 
     header {
@@ -859,6 +866,10 @@ header a {
 
     .logo-text {
         height: 15rem;
+    }
+
+    .nav-list {
+        white-space: nowrap;
     }
 
     /* HERO */
