@@ -865,7 +865,6 @@ header a {
 
     .hero-section {
         padding: 2.5rem;
-        margin-bottom: 2rem;
     }
 
     .hero-container {
@@ -876,7 +875,7 @@ header a {
         background-image: url(../assets/Hummingbird1cropped.png);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: auto;
+        background-size: contain;
     }
 
     .hero-img {
