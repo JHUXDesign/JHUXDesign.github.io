@@ -1043,7 +1043,11 @@ header a {
 }
 
 @media (max-height: 800em) {
+    .hero-section {
+        margin-bottom: 15rem;
+    }
+
     .about {
-        margin-top: 30rem;
+        margin-top: 15rem;
     }
 }
