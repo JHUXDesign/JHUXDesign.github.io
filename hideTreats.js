@@ -2,8 +2,11 @@ const treatsEl = document.querySelectorAll(".treats");
 const todaysDate = new Date();
 
 let todaysMonth = todaysDate.getMonth();
-console.log(todaysMonth);
+console.log(typeof todaysMonth);
 
-if (todaysMonth <= 10) {
-    treatsEl.classList.remove("hidden");
+console.log(treatsEl);
+
+if (todaysMonth === 11) {
+    treatsEl[0].classList.add("hidden");
+    console.log(treatsEl);
 }
