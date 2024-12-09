@@ -865,6 +865,7 @@ header a {
 
     .hero-section {
         padding: 2.5rem;
+        z-index: 2;
     }
 
     .hero-container {
